@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithun M</title>
+    <link rel="icon" href="image/coding.png" type="iamge/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@1,600&family=Open+Sans:wght@500&family=Pixelify+Sans:wght@500&family=Poppins:wght@600&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #ffb703;
+            color: aliceblue;
+
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo-img {
+            width: 38px;
+            padding: 5px 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease 0s;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 20px;
+        }
+
+        .left {
+            font-size: 1.2rem;
+            padding: 10px 0px;
+        }
+
+        .fristSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+            /* font-family: 'Josefin Sans', sans-serif */
+        }
+
+        img.github {
+            width: 26px;
+            position: relative;
+            left: 17px;
+            padding: 0 8px;
+        }
+
+        .fristSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .purpel {
+            color: #ffa200;
+        }
+
+        #element {
+            color: #ffa200;
+        }
+
+        .secondSection {
+            background-color: #f4f3ee;
+            height: 100vh;
+
+        }
+
+        .container {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .container .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .container h1 {
+            font-size: 1.5rem;
+        }
+
+        #color {
+            color: #ffb703;
+        }
+
+        .secondSection .box {
+            background-color: #ffa200;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: #ffa200;
+            margin: 0 100px;
+        }
+
+        .vertical-img {
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: -28px;
+        }
+
+        .vertical-bio {
+            position: relative;
+            top: 36px;
+            left: -59px;
+            font-size: 10px;
+            width: 101px;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .vertical-year {
+            position: relative;
+            left: -57px;
+            font-size: 10px;
+            top: 28px;
+            width: 113px;
+            text-align: center;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 26px;
+            left: -62px;
+            width: 145px;
+            font-size: 9px;
+            color: #ffb703;
+            text-align: center;
+        }
+
+        section.thiredSection {
+            height: auto;
+        }
+
+        .top-box {
+            display: grid;
+            grid-auto-flow: column;
+            margin: 10px 0;
+        }
+
+        .buttom-box {
+            display: grid;
+            grid-auto-flow: column;
+            margin: 20px 0;
+            padding: 0 150px;
+        }
+
+        .buttom-box .box2 {
+            padding: 20px 10px;
+            text-align: center;
+            border: 4px solid #ffa200;
+            margin: 0 8px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .box1 {
+            padding: 20px 10px;
+            text-align: center;
+            border: 4px solid #ffa200;
+            margin: 0 8px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+
+        .javaImg {
+            width: 33px;
+        }
+
+        ul.des-ul {
+            margin: 15px;
+        }
+
+        .fourthSection {
+            background-color: #f4f3ee;
+            height: 100vh;
+        }
+
+        .top-project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 10px;
+            color: #01090d8a;
+            padding: 10px 113px;
+        }
+
+        .projectbox {
+            background-color: #ffdf3f;
+            margin: 10px 20px;
+            padding: 45px 27px;
+            border-radius: 10px;
+        }
+
+        img.project-img {
+            width: 33px;
+            position: relative;
+            top: -39px;
+            left: 69px;
+        }
+
+        .projecttitle {
+            position: relative;
+            text-align: center;
+            top: -45px;
+            font-size: 10px;
+        }
+
+        .projectdesc {
+            font-size: 8px;
+            width: 185px;
+            text-align: center;
+            position: relative;
+            top: -18px;
+        }
+
+        .fifthSection {
+            height: 90vh;
+        }
+
+        .contactcontainer {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contactTitle {
+            text-align: center;
+            padding: 30px 0px;
+            font-size: 20px;
+            color: #ffdf3f;
+        }
+
+        img.profile {
+            width: 240px;
+            padding: 40px 0px;
+            /* box-shadow: 10px 7px 5px rgb(65, 65, 65); */
+            filter: drop-shadow(16px 7px 8px #ffdf3f);
+        }
+
+        .contactform {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .contact {
+            display: flex;
+        }
+
+        .contactform h1 {
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        .contactform form div {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactform form div input {
+            width: 400px;
+            padding: 7px 0;
+        }
+
+        .form-text {
+            font-size: 8px;
+            color: midnightblue;
+        }
+
+        #form-check {
+            flex-direction: row;
+            width: 277px;
+        }
+
+        #form-check input {
+            width: 14px;
+            margin: 3px 3px;
+        }
+
+        .btn {
+            margin: 20px 30px;
+        }
+
+        .btn {
+            border: none;
+            padding: 9px 25px;
+            border-radius: 50px;
+            background-color: #ffa200;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease 0s;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #636161;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #ffd60a;
+            height: auto;
+        }
+
+        .footer {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+
+        }
+
+        .footer-img {
+            width: 33px;
+            padding: 0px 10px;
+        }
+
+        .footer-img2 {
+            width: 33px;
+            padding-top: 5px;
+            padding: 0 2px;
+        }
+
+        .footer-box {
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo-img" src="image/logo.png" alt="logo">
+                <div class="left">Mithun Profilo</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="fristSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purpel">Mithun</span>
+                <div>And I am a Passionate</div>
+                <span id="element"></span></br>
+                <a href="https://github.com/mithun00gowda"><img src="image/github.png" alt="github" class="github"></a>
+                <a href="https://linkedin.com/in/mithun-m-b21204191"><img src="image/linkedin.png" alt="Linkedin"
+                        class="github"></a>
+                <a href="https://linkedin.com/in/mithun-m-b21204191"><img src="image/instagram.png" alt="instagram"
+                        class="github"></a></br>
+                <a href="image/mithunM.pdf" target="_blank"><button class="btn">Download CV</button></a>
+            </div>
+            <div class="rightSection">
+                <img src="/image/image.png" alt="image">
+            </div>
+        </section>
+        <section class="secondSection" id="about">
+            <div class="container">
+                <div class="top">
+                    <span id="color">What I Have Done So For.</span>
+                    <h1>Eduction & Expirence</h1>
+                </div>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="vertical-img" src="/image/student.png" alt="student">
+                        <div class="vertical-bio">BCA</div>
+                        <div class="vertical-year">(06/2018-10/2021)</div>
+                        <div class="vertical-desc">Government College, Mandya, Karnataka
+                            Achieved a CGPA of 6.9 out of 10.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-img" src="/image/graduate.png" alt="student">
+                        <div class="vertical-bio">MCA</div>
+                        <div class="vertical-year">(02/2022-10/2023)</div>
+                        <div class="vertical-desc">Visveswaraya Technology University PG Centre, Mysore, Karnataka
+                            Graduated with a CGPA of 8.4 out of 10.
+                        </div>
+
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-img" src="/image/developer.png" alt="student">
+                        <div class="vertical-bio">Internship </div>
+                        <div class="vertical-year">(11/2022-12/2022)</div>
+                        <div class="vertical-desc">Hoch Tech Solution Mysore, As a Python developer intern, I assisted
+                            in coding, testing, and debugging software, collaborated on projects,
+                            and contributed to team development efforts.
+                        </div>
+
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-img" src="/image/coding.png" alt="student">
+                        <div class="vertical-bio">Internship </div>
+                        <div class="vertical-year">(Present)</div>
+                        <div class="vertical-desc">I have been actively engaged in a remote internship with OctaNet
+                            since October 2023, where I am gaining handson experience as a Python developer, Java
+                            developer, and web developer.
+
+                        </div>
+
+                    </div>
+                    <div class="vertical">
+                        <img class="vertical-img" src="/image/intern.png" alt="student">
+                        <div class="vertical-bio">Internship </div>
+                        <div class="vertical-year">(Present)</div>
+                        <div class="vertical-desc">I've been actively engaged in the Accenture Developer Program since
+                            October 2023, where I'm enhancing my
+                            development skills and gaining valuable industry experience.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thiredSection" id="skills">
+            <div class="container">
+                <div class="top">
+                    <span id="color">What I Have Learn.</span>
+                    <h1>Skills</h1>
+                </div>
+                <div class="skills-box">
+                    <div class="top-box">
+                        <div class="box1">
+                            <div class="title"><img src="image/java.png" alt="Java" class="javaImg"></div>
+                            <div class="des">
+                                <ul class="des-ul">
+                                    <li>Java Programming</li>
+                                    <li>DSA</li>
+                                    <li>OOPs Concepts</li>
+                                    <li>Java development tools (NetBeans, Eclipse, IntelliJ IDEA)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="title"><img src="image/web.png" alt="Web development" class="javaImg"></div>
+                            <div class="des">
+                                <ul class="des-ul">
+                                    <li>Front-End Development (HTML, CSS, JavaScript, React, Angular, or Vue.js.),</li>
+                                    <li>Back-end development (Node.js, PHP, and Java)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="title"><img src="image/python.png" alt="Python" class="javaImg"></div>
+                            <div class="des">
+                                <ul class="des-ul">
+                                    <li>Data Science and Analysis (NumPy and Pandas)</li>
+                                    <li>Python Programming</li>
+                                    <li>Problem Solving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttom-box">
+                        <div class="box2">
+                            <div class="title"><img src="image/database.png" alt="DataBase" class="javaImg"></div>
+                            <div class="des">
+                                <ul class="des-ul">
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                    <li>DBMS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="title"><img src="image/android.png" alt="android" class="javaImg"></div>
+                            <div class="des">
+                                <ul class="des-ul">
+                                    <li>Flutter</li>
+                                    <li>Dart</li>
+                                    <li>FireBase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthSection" id="projects">
+            <div class="container">
+                <div class="top">
+                    <span id="color">Where I Use My Skills.</span>
+                    <h1>Projects</h1>
+                    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quia! Iste
+                        consequatur illum ipsum minima voluptates pariatur voluptatum! Inventore, commodi.</div>
+                </div>
+                <div class="top-project">
+                    <div class="projectbox">
+                        <img src="image/clipboard.png" alt="clipboard" class="project-img">
+                        <div class="projecttitle">English Learning Application</div>
+                        <div class="projectdesc">Built using Flutter, Java, Firebase, and Android Studio, this English
+                            learning platform offers a diverse range of
+                            materials, including chatbots, voice assistants, and engaging games, to make the learning
+                            experience enjoyable
+                            and effective.</div>
+                    </div>
+                    <div class="projectbox">
+                        <img src="image/hospital.png" alt="clipboard" class="project-img">
+                        <div class="projecttitle">Online Medical Management System.</div>
+                        <div class="projectdesc">This online medical management system, constructed with HTML, CSS, JS,
+                            PHP, and MySQL, effectively
+                            manages medical products and billing processes.</div>
+                    </div>
+                    <div class="projectbox">
+                        <img src="image/analytics.png" alt="clipboard" class="project-img">
+                        <div class="projecttitle">Indian Earth-quack Analysis.</div>
+                        <div class="projectdesc">I harnessed Python's NumPy and Pandas libraries to perform a
+                            comprehensive analysis of earthquake data in
+                            India, revealing valuable insights into seismic activity.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifthSection" id="contact">
+            <div class="contactTitle"> Contact Me</div>
+            <div class="contactcontainer">
+
+                <div class="left">
+                    <img src="image/coding.png" alt="profile" class="profile">
+                </div>
+                <div class="right">
+                    <div class="contactform">
+                        <form>
+                            <div class="mb-3">
+                                <label for="clientEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp"
+                                    required>
+                                <div id="emailHelp" class="form-text">We'll never share your email & Phone with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientPhonenumber" class="form-label">Phone Number</label>
+                                <input type="phone" class="form-control" id="clientPhonenumber" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label">Message Box</label>
+                                <input type="text" class="form-control" id="clientMessagebox" required>
+                            </div>
+                            <div id="form-check">
+                                <input type="checkbox" class="isclient" id="isclient" required>
+                                <label class="form-check-label" for="isclient">I Want To work With Me</label>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="image/coding.png" alt="coding" class="footer-img">
+            <div class="footer-box">Mithun M | copyright &copy; 2023 Mithun M &#x2661; </div>
+            <!-- <img src="image/heart.png" alt="love" class="footer-img2"> -->
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Full Stack Developer.', 'Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
